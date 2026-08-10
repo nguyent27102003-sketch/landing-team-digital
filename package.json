@@ -1,0 +1,9 @@
+{
+  "name": "hung-cuong-equipment-configurator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Equipment Recommendation Configurator for Hùng Cường Company",
+  "scripts": {
+    "test": "node run_node_tests.js"
+  }
+}

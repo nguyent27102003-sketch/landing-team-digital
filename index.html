@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HÙNG CƯỜNG — Equipment Recommendation Configurator</title>
+  <meta name="description" content="Hệ thống đề xuất cấu hình thiết bị Livestream, Quay Video và Chụp Ảnh chuyên nghiệp dành cho PM và Quản lý Hùng Cường Company." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/configurator.css" />
+  <link rel="stylesheet" href="css/result.css" />
+  <link rel="stylesheet" href="css/library.css" />
+  <link rel="stylesheet" href="css/comparison.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo-area">
+        <div class="logo-badge">HC</div>
+        <div class="logo-text-wrap">
+          <span class="logo-title">HÙNG CƯỜNG</span>
+          <span class="logo-subtitle">EQUIPMENT CONFIGURATOR</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link" data-route="home">Trang chủ</a></li>
+          <li><a href="#configurator" class="nav-link" data-route="configurator">Tìm combo</a></li>
+          <li><a href="#library" class="nav-link" data-route="library">Thư viện thiết bị</a></li>
+          <li><a href="#compare" class="nav-link" data-route="compare">So sánh đối đầu</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#configurator" class="btn btn-accent btn-sm">Bắt đầu cấu hình</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Content -->
+  <main class="main-content">
+
+    <!-- 1. Home / Hero View -->
+    <section id="homeView" class="container">
+      <div style="text-align: center; padding: var(--space-12) 0 var(--space-8) 0; max-width: 860px; margin: 0 auto;">
+        <div class="section-tag" style="margin-bottom: var(--space-2);">HỆ THỐNG RA QUYẾT ĐỊNH THIẾT BỊ NỘI BỘ v1.0</div>
+        <h1 style="font-size: 2.5rem; margin-bottom: var(--space-4); color: var(--color-primary-dark); line-height: 1.2;">
+          Chọn đúng thiết bị cho nhu cầu Livestream, Quay & Chụp
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: var(--space-6);">
+          Cho biết anh đang có gì, cần làm gì và ngân sách bao nhiêu. Hệ thống sẽ đề xuất bộ thiết bị phù hợp và giải thích rõ tại sao.
+        </p>
+
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-12);">
+          <button type="button" class="btn btn-accent btn-lg" id="heroFindBtn">
+            ⚡ TÌM COMBO PHÙ HỢP
+          </button>
+          <button type="button" class="btn btn-outline btn-lg" id="heroLibBtn">
+            📚 XEM THƯ VIỆN THIẾT BỊ (81)
+          </button>
+        </div>
+
+        <!-- 3 Core Value Props -->
+        <div class="grid grid-3 gap-6 text-left">
+          <div class="card" style="border-top: 4px solid var(--color-accent);">
+            <div style="font-size: 1.75rem; margin-bottom: var(--space-2);">📱</div>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2);">Tận dụng thiết bị đang có</h3>
+            <p style="font-size: 0.875rem;">Ưu tiên khai thác điện thoại, laptop, chân máy sẵn có. Tuyệt đối không tính tiền mua lại nếu tương thích.</p>
+          </div>
+
+          <div class="card" style="border-top: 4px solid var(--color-primary);">
+            <div style="font-size: 1.75rem; margin-bottom: var(--space-2);">🎯</div>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2);">Đề xuất theo nhu cầu thực tế</h3>
+            <p style="font-size: 0.875rem;">Không mặc định món đắt hơn là tốt hơn. Cấu hình được cá nhân hóa theo độ cơ động, không gian và số host.</p>
+          </div>
+
+          <div class="card" style="border-top: 4px solid var(--color-success);">
+            <div style="font-size: 1.75rem; margin-bottom: var(--space-2);">💎</div>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2);">Giải thích rõ quyết định</h3>
+            <p style="font-size: 0.875rem;">Minh bạch điểm mạnh, hạn chế, trade-off và đường dẫn đặt mua trực tiếp xác thực từ workbook backend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Configurator Wizard View -->
+    <section id="configuratorWizard" class="hidden"></section>
+
+    <!-- 3. Recommendation Result View -->
+    <section id="recommendationResult" class="hidden"></section>
+
+    <!-- 4. Equipment Library View -->
+    <section id="equipmentLibrary" class="hidden"></section>
+
+    <!-- 5. Product Comparison View -->
+    <section id="productComparison" class="hidden"></section>
+
+  </main>
+
+  <!-- Product Detail Modal -->
+  <div id="productDetailModal" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.5px;">CHI TIẾT THIẾT BỊ BACKEND</span>
+        <button type="button" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar (Active on Result View) -->
+  <div id="mobileStickyBar" class="mobile-sticky-bottom-bar">
+    <div>
+      <div class="mobile-bar-caption">Cần mua thêm:</div>
+      <div class="mobile-bar-price" id="mobileBarPrice">0đ</div>
+    </div>
+    <a href="#result" class="btn btn-accent btn-sm">Xem danh sách mua</a>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">HÙNG CƯỜNG COMPANY & HÙNG CƯỜNG PHARMA</div>
+        <div class="footer-source-note">Source of Truth: HÙNG CƯỜNG — EQUIPMENT CONFIGURATOR BACKEND v1.0.xlsx</div>
+      </div>
+      <div style="font-size: 0.8rem; color: #64748B;">
+        Phiên bản 1.0 (2026-08-10) · 100% Verified Logic & Zero Fake Data
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Entry Script -->
+  <script type="module" src="js/ui/app.js"></script>
+</body>
+</html>

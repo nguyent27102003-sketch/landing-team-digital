@@ -1,0 +1,1698 @@
+{
+  "01_CONFIGURATOR": [
+    [
+      {
+        "formula": null,
+        "value": "LIVE / VIDEO / PHOTO EQUIPMENT CONFIGURATOR"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "USER HAS"
+      },
+      {
+        "formula": null,
+        "value": "INPUT"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "ENGINE PREVIEW"
+      },
+      {
+        "formula": null,
+        "value": "RESULT"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Smartphone"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Recommended_System"
+      },
+      {
+        "formula": "=IF(AND(B8=\"Yes\",OR(B18=\"Yes\",B19=\"Yes\",B20=\"Yes\")),\"POCKET\",IF(AND(B4=\"Yes\",B24=\"High\"),\"SMARTPHONE\",IF(AND(B7=\"Yes\",B23=\"Yes\",B24=\"Fixed\"),\"WEBCAM_PC\",IF(B4=\"Yes\",\"SMARTPHONE\",IF(B7=\"Yes\",\"WEBCAM_PC\",\"NO_MATCH\")))))",
+        "value": "SMARTPHONE"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Smartphone_OS"
+      },
+      {
+        "formula": null,
+        "value": "iOS"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "System_Reason"
+      },
+      {
+        "formula": "=IF(E4=\"SMARTPHONE\",\"Tận dụng smartphone sẵn có để giảm thiết bị và thời gian setup.\",IF(E4=\"POCKET\",\"Tận dụng Pocket cho video ổn định; không mua lại camera nếu đã có.\",IF(E4=\"WEBCAM_PC\",\"PC + OBS + setup cố định phù hợp luồng webcam trực tiếp.\",\"Không đủ dữ liệu để chọn hệ.\")))",
+        "value": "Tận dụng smartphone sẵn có để giảm thiết bị và thời gian setup."
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Smartphone_Connector"
+      },
+      {
+        "formula": null,
+        "value": "USB-C"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Audio_Product_ID"
+      },
+      {
+        "formula": "=IF(B11=\"Yes\",\"\",IF(B22=\"2\",\"AUD_DJI_MICMINI2\",IF(B28=\"Professional\",\"AUD_DJI_MIC3\",\"AUD_DJI_MICMINI\")))",
+        "value": "AUD_DJI_MICMINI"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Laptop_PC"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Light_Product_ID"
+      },
+      {
+        "formula": "=IF(B12=\"Yes\",\"\",IF(B28=\"Professional\",\"LGT_SMR_RC60B\",IF(B29<5000000,\"LGT_GDX_C30BI\",\"LGT_AMR_ACE25X\")))",
+        "value": "LGT_AMR_ACE25X"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Pocket"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Capture_Product_ID"
+      },
+      {
+        "formula": "=IF(E4=\"SMARTPHONE\",\"\",IF(E4=\"POCKET\",IF(B8=\"Yes\",\"\",\"PKT_DJI_OP3_STD\"),IF(E4=\"WEBCAM_PC\",IF(B11=\"Yes\",\"\",IF(B28=\"Professional\",\"WCM_OBS_TINY2L\",\"WCM_OBS_MEET2\")),\"\")))",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Pocket_Model"
+      },
+      {
+        "formula": null,
+        "value": "Unknown"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Budget_Status"
+      },
+      {
+        "formula": "=IF(B29>='02_OUTPUT'!B27,\"WITHIN_BUDGET\",\"OVER_BUDGET\")",
+        "value": "WITHIN_BUDGET"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Webcam"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "Overall_Status"
+      },
+      {
+        "formula": "=IF(E4=\"NO_MATCH\",\"NO_MATCH\",IF(OR(AND(B4=\"Yes\",B6=\"Unknown\"),AND(B8=\"Yes\",B9=\"Unknown\")),\"MISSING_DATA\",IF(E9=\"OVER_BUDGET\",\"OVER_BUDGET\",\"VALID\")))",
+        "value": "VALID"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Mic"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Light"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Tripod"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Power"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Hub_Adapter"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Has_Storage"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Need_Live"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Need_Short_Video"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Need_Long_Video"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Need_Product_Photo"
+      },
+      {
+        "formula": null,
+        "value": "Yes"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Need_Host_Photo"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Host_Count"
+      },
+      {
+        "formula": null,
+        "value": "1"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "OBS"
+      },
+      {
+        "formula": null,
+        "value": "No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Mobility"
+      },
+      {
+        "formula": null,
+        "value": "High"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Operator"
+      },
+      {
+        "formula": null,
+        "value": "1 PM"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Space"
+      },
+      {
+        "formula": null,
+        "value": "Small"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Style"
+      },
+      {
+        "formula": null,
+        "value": "Compact"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Budget_VND"
+      },
+      {
+        "formula": null,
+        "value": 5000000.0
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ]
+  ],
+  "02_OUTPUT": [
+    [
+      {
+        "formula": null,
+        "value": "ANTIGRAVITY OUTPUT — FORMULA DRIVEN"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Config_ID"
+      },
+      {
+        "formula": null,
+        "value": "CFG-LIVE-001"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Generated_Date"
+      },
+      {
+        "formula": null,
+        "value": "2026-08-10"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Recommended_System"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!E4",
+        "value": "SMARTPHONE"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "System_Reason"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!E5",
+        "value": "Tận dụng smartphone sẵn có để giảm thiết bị và thời gian setup."
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Existing_Equipment_Summary"
+      },
+      {
+        "formula": "=\"Smartphone=\"&'01_CONFIGURATOR'!B4&\"; PC=\"&'01_CONFIGURATOR'!B7&\"; Pocket=\"&'01_CONFIGURATOR'!B8&\"; Mic=\"&'01_CONFIGURATOR'!B11&\"; Light=\"&'01_CONFIGURATOR'!B12",
+        "value": "Smartphone=Yes; PC=Yes; Pocket=No; Mic=No; Light=No"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Budget"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!B29",
+        "value": 5000000
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Budget_Status"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!E9",
+        "value": "WITHIN_BUDGET"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Compatibility_Status"
+      },
+      {
+        "formula": null,
+        "value": "CONDITIONAL"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Why_This_Combo"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!E5",
+        "value": "Tận dụng smartphone sẵn có để giảm thiết bị và thời gian setup."
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Why_Not_Smartphone"
+      },
+      {
+        "formula": "=IF(B5=\"SMARTPHONE\",\"— selected\",\"Smartphone not selected because another owned/fixed system better matched the conditions.\")",
+        "value": "— selected"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Why_Not_Webcam"
+      },
+      {
+        "formula": "=IF(B5=\"WEBCAM_PC\",\"— selected\",\"Webcam not selected because the setup is mobile or product-photo use is present.\")",
+        "value": "Webcam not selected because the setup is mobile or product-photo use is present."
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Why_Not_Pocket"
+      },
+      {
+        "formula": "=IF(B5=\"POCKET\",\"— selected\",\"Pocket not selected because it is not owned or another system better matched the conditions.\")",
+        "value": "Pocket not selected because it is not owned or another system better matched the conditions."
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Overall_Status"
+      },
+      {
+        "formula": "='01_CONFIGURATOR'!E10",
+        "value": "VALID"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Purchase_Type"
+      },
+      {
+        "formula": null,
+        "value": "Product_ID"
+      },
+      {
+        "formula": null,
+        "value": "Product_Name"
+      },
+      {
+        "formula": null,
+        "value": "Price"
+      },
+      {
+        "formula": null,
+        "value": "Purchase_Link"
+      },
+      {
+        "formula": null,
+        "value": "Link_Status"
+      },
+      {
+        "formula": null,
+        "value": "Why_Selected"
+      },
+      {
+        "formula": null,
+        "value": "Compatibility_Note"
+      }
+    ],
+    [
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E8=\"\",\"\", \"REQUIRED\")",
+        "value": null
+      },
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E8=\"\",\"\",'01_CONFIGURATOR'!E8)",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B18=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E6=\"\",\"\", \"REQUIRED\")",
+        "value": "REQUIRED"
+      },
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E6=\"\",\"\",'01_CONFIGURATOR'!E6)",
+        "value": "AUD_DJI_MICMINI"
+      },
+      {
+        "formula": null,
+        "value": "DJI Mic Mini"
+      },
+      {
+        "formula": null,
+        "value": 1170000
+      },
+      {
+        "formula": null,
+        "value": "https://shop.tiktok.com/vn/pdp/micro-dji-mic-mini-khong-day-chong-giat-am-thanh-net/1732106808955471846"
+      },
+      {
+        "formula": null,
+        "value": "ACTIVE"
+      },
+      {
+        "formula": null,
+        "value": "Reduces cables for mobile creators"
+      },
+      {
+        "formula": "=IF(B19=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": "See 05_COMPATIBILITY for pair-level conditions"
+      }
+    ],
+    [
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E7=\"\",\"\", \"REQUIRED\")",
+        "value": "REQUIRED"
+      },
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E7=\"\",\"\",'01_CONFIGURATOR'!E7)",
+        "value": "LGT_AMR_ACE25X"
+      },
+      {
+        "formula": null,
+        "value": "amaran Ace 25x"
+      },
+      {
+        "formula": null,
+        "value": 1590000
+      },
+      {
+        "formula": null,
+        "value": "https://digi4u.net/den-led-amaran-ace-25x-bi-color-light-chinh-hang-new-10/2024"
+      },
+      {
+        "formula": null,
+        "value": "ACTIVE"
+      },
+      {
+        "formula": null,
+        "value": "Supports mobile key/fill lighting without mains power"
+      },
+      {
+        "formula": "=IF(B20=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": "See 05_COMPATIBILITY for pair-level conditions"
+      }
+    ],
+    [
+      {
+        "formula": "=IF(AND('01_CONFIGURATOR'!E4=\"WEBCAM_PC\",'01_CONFIGURATOR'!B15=\"No\"),\"RECOMMENDED\",\"\")",
+        "value": null
+      },
+      {
+        "formula": "=IF(A21=\"\",\"\",\"HUB_UGR_REVO105\")",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B21=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": "=IF(AND('01_CONFIGURATOR'!E4=\"POCKET\",'01_CONFIGURATOR'!B16=\"No\"),\"REQUIRED\",\"\")",
+        "value": null
+      },
+      {
+        "formula": "=IF(A22=\"\",\"\",\"STO_KIN_GO\")",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B22=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": "=IF(AND('01_CONFIGURATOR'!E4=\"SMARTPHONE\",'01_CONFIGURATOR'!B13=\"No\"),\"RECOMMENDED\",\"\")",
+        "value": null
+      },
+      {
+        "formula": "=IF(A23=\"\",\"\",\"RIG_SMR_UCAGE\")",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B23=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": "=IF(AND('01_CONFIGURATOR'!E4=\"SMARTPHONE\",'01_CONFIGURATOR'!B18=\"Yes\",'01_CONFIGURATOR'!B28<>\"Compact\"),\"OPTIONAL\",\"\")",
+        "value": null
+      },
+      {
+        "formula": "=IF(A24=\"\",\"\",\"GIM_DJI_OM8\")",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B24=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": "=IF(AND('01_CONFIGURATOR'!B14=\"No\",'01_CONFIGURATOR'!B24=\"High\"),\"OPTIONAL\",\"\")",
+        "value": "OPTIONAL"
+      },
+      {
+        "formula": "=IF(A25=\"\",\"\",\"PWR_UGR_20K100\")",
+        "value": "PWR_UGR_20K100"
+      },
+      {
+        "formula": null,
+        "value": "UGREEN 20,000mAh 100W Power Bank"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": "https://us.ugreen.com/products/ugreen-100w-20000mah-power-bank"
+      },
+      {
+        "formula": null,
+        "value": "ACTIVE"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": "=IF(B25=\"\",\"\",\"See 05_COMPATIBILITY for pair-level conditions\")",
+        "value": "See 05_COMPATIBILITY for pair-level conditions"
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Required_Total"
+      },
+      {
+        "formula": "=SUMIF(A18:A25,\"REQUIRED\",D18:D25)",
+        "value": 2760000
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Recommended_Total"
+      },
+      {
+        "formula": "=SUMIF(A18:A25,\"RECOMMENDED\",D18:D25)",
+        "value": 0
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Full_Total"
+      },
+      {
+        "formula": "=SUM(D18:D25)",
+        "value": 2760000
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Warning"
+      },
+      {
+        "formula": "=IF(COUNTIF(F18:F25,\"DEAD\")+COUNTIF(F18:F25,\"VERIFY\")>0,\"Có sản phẩm cần cập nhật link/giá trước khi mua.\",IF(B15=\"OVER_BUDGET\",\"Ngân sách thấp hơn tổng bắt buộc.\",\"\"))",
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ],
+    [
+      {
+        "formula": null,
+        "value": "Cheaper_Alternative"
+      },
+      {
+        "formula": "=IF('01_CONFIGURATOR'!E6=\"AUD_DJI_MICMINI2\",\"AUD_DJI_MICMINI\",IF('01_CONFIGURATOR'!E7=\"LGT_AMR_ACE25X\",\"LGT_GDX_C30BI\",\"\"))",
+        "value": "LGT_GDX_C30BI"
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      },
+      {
+        "formula": null,
+        "value": null
+      }
+    ]
+  ]
+}

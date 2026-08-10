@@ -1,0 +1,131 @@
+/* Product Comparison Styles */
+
+.comparison-container {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-16);
+}
+
+.comparison-header {
+  margin-bottom: var(--space-6);
+}
+
+.curated-duels-wrap {
+  margin-bottom: var(--space-8);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.curated-duels-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3);
+}
+
+.curated-duels-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.duel-chip {
+  padding: 6px 14px;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.duel-chip:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+}
+
+.duel-chip.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+/* Comparison Matrix Table */
+.comparison-table-wrap {
+  overflow-x: auto;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-8);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 680px;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  vertical-align: top;
+}
+
+.comparison-table th:last-child, .comparison-table td:last-child {
+  border-right: none;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comp-feature-col {
+  width: 200px;
+  background-color: var(--color-bg-subtle);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.comp-product-header {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: var(--space-5) var(--space-4);
+}
+
+.comp-prod-brand {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.comp-prod-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-top: 2px;
+  margin-bottom: var(--space-2);
+}
+
+.comp-prod-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.comp-winner-cell {
+  background-color: #FEF9C3;
+  color: #854D0E;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  margin-top: var(--space-2);
+}
