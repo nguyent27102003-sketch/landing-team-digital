@@ -1,4 +1,6 @@
-# THIẾT KẾ ĐẶC TẢ NÂNG CẤP TOÀN DIỆN HỆ THỐNG (MASTER SYSTEM UPDATE ARCHITECTURE)
+# Generate comprehensive implementation_plan.md artifact matching Master System Update Requirement
+
+doc = """# THIẾT KẾ ĐẶC TẢ NÂNG CẤP TOÀN DIỆN HỆ THỐNG (MASTER SYSTEM UPDATE ARCHITECTURE)
 ## HÙNG CƯỜNG EQUIPMENT CONFIGURATOR — CAPTURE FIX + CONNECTION LIBRARY + MARKETPLACE DATA + SYSTEM-WIDE SYNC
 
 **TRẠNG THÁI TRIỂN KHAI**: `CHỜ PHÊ DUYỆT ĐẶC TẢ KIẾN TRÚC (DO NOT CODE / DO NOT MIGRATE YET)`
@@ -54,22 +56,22 @@ Hệ thống phân tách danh mục `CONNECTION` thành 16 Subcategories kỹ th
 | Product_ID | Tên sản phẩm / Model | Subcategory | Thông số Kỹ thuật & Băng thông | Mục đích sử dụng chuyên biệt |
 |---|---|---|---|---|
 | `CON_PWR_UGR_100W_1M` | UGREEN USB-C to USB-C 100W 1m | `USB_C_PD_CABLE` | 100W, E-marker, USB 2.0 (480Mbps) | **CHỈ DÙNG CẤP NGUỒN / SẠC PD**, Không làm cáp data webcam 4K |
-| `CON_DATA_UGR_80150` | UGREEN 80150 USB-C Gen2 1m | `USB_C_DATA_CABLE` | 10Gbps, 4K60, PD 100W | **DATA + VIDEO + POWER** (Webcam 4K, Pocket 3 $	o$ PC) |
+| `CON_DATA_UGR_80150` | UGREEN 80150 USB-C Gen2 1m | `USB_C_DATA_CABLE` | 10Gbps, 4K60, PD 100W | **DATA + VIDEO + POWER** (Webcam 4K, Pocket 3 $\to$ PC) |
 | `CON_DATA_UGR_US184` | UGREEN US184 / 20881 USB-A to C | `USB_A_TO_USB_C_DATA`| 5Gbps USB 3.x | Kết nối thiết bị USB-C vào PC chỉ có cổng USB-A |
 | `CON_EXT_C_UGR_US372` | UGREEN US372 / 30205 Extension | `USB_C_EXTENSION` | 10Gbps, 4K60, 100W | Nối dài kết nối USB-C data / webcam khoảng cách xa |
 | `CON_EXT_A_UGR_US103` | UGREEN US103 Extension | `USB_A_EXTENSION` | 5Gbps USB 3.0 | Nối dài thiết bị ngoại vi / webcam USB-A |
-| `CON_HDMI_UGR_60438` | UGREEN 60438 HDMI 2.0 1m | `HDMI_CABLE` | 4K60, 18Gbps | Kết nối Camera/Pocket $	o$ HDMI Capture Card |
+| `CON_HDMI_UGR_60438` | UGREEN 60438 HDMI 2.0 1m | `HDMI_CABLE` | 4K60, 18Gbps | Kết nối Camera/Pocket $\to$ HDMI Capture Card |
 | `CON_HDMI_UGR_60439` | UGREEN 60439 HDMI 2.0 1.5m | `HDMI_CABLE` | 4K60, 18Gbps | Nối dài cổng HDMI phòng livestream |
 | `STO_READER_UGR_50704` | UGREEN 50704 / CM184 SD/TF | `CARD_READER` | USB-C 5Gbps, SD + microSD | Đọc thẻ nhớ hậu kỳ cho Pocket 3 4K |
 | `PWR_CHG_UGR_NEXODE100`| UGREEN Nexode 100W Charger | `POWER_ADAPTER` | 100W PD 4 Ports (3C1A) | Nguồn AC công suất cao cho đèn COB / Pin sạc |
 | `PWR_BANK_UGR_20K100` | UGREEN Nexode Power Bank 20K | `POWER_BANK` | 20.000mAh, 100W PD Output | Nguồn pin dự phòng công suất cao cho đèn & Pocket |
-| `AUD_ADP_DJI_MOBILE_LIGHTNING` | DJI Mic Series Mobile Receiver Adapter (USB-C $	o$ Lightning) | `LIGHTNING_ADAPTER` | Adapter Lightning chính hãng DJI | **CHỈ DÙNG CHO DJI MIC SERIES MOBILE RECEIVER** (Không nhầm với Mic 3) |
+| `AUD_ADP_DJI_MOBILE_LIGHTNING` | DJI Mic Series Mobile Receiver Adapter (USB-C $\to$ Lightning) | `LIGHTNING_ADAPTER` | Adapter Lightning chính hãng DJI | **CHỈ DÙNG CHO DJI MIC SERIES MOBILE RECEIVER** (Không nhầm với Mic 3) |
 
 ---
 
 ### 4. CONNECTION DEPENDENCY MAP (MA TRẬN KẾT NỐI PHỤ THUỘC)
 
-Chuỗi phụ thuộc kỹ thuật bắt buộc: $	ext{CAPTURE} 	o 	ext{AUDIO} 	o 	ext{CONNECTION} 	o 	ext{POWER} 	o 	ext{DESTINATION}$
+Chuỗi phụ thuộc kỹ thuật bắt buộc: $\text{CAPTURE} \to \text{AUDIO} \to \text{CONNECTION} \to \text{POWER} \to \text{DESTINATION}$
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -119,7 +121,7 @@ CREATE TABLE PRODUCT_VARIANT_MASTER (
 
 ### 6. MARKETPLACE_PRODUCT_DATA DESIGN (BẢNG DỮ LIỆU THƯƠNG MẠI SÀN - Sheet 24)
 
-$$	ext{Composite Primary Key} = 	ext{Product\_ID} \ ert \ 	ext{Variant\_ID} \ ert \ 	ext{Platform}$$
+$$\text{Composite Primary Key} = \text{Product\_ID} \ \vert \ \text{Variant\_ID} \ \vert \ \text{Platform}$$
 
 Chỉ các bản ghi có `Publish_Status == PUBLISHED` và `Variant_Match_Status == EXACT_MATCH` mới được hiển thị nút đặt mua sản phẩm.
 
@@ -167,11 +169,11 @@ Configurator Result  Investment V2   Equipment Library  Product Detail  Product 
 | Test ID | Đầu vào Kiểm thử | Hành vi Kỹ thuật Kỳ vọng (Expected Result) | Trạng thái Khóa |
 |---|---|---|:---:|
 | **CAP-01** | `Base_Capture = NONE`, Live+Short Video | `CAPTURE` tự động vào `REQUIRED_PURCHASE`. Không trả Combo thiếu Capture. | **CRITICAL PASS** |
-| **CAP-02** | `Base_Capture = NONE`, Budget = 5 triệu | Thêm Pocket 3 làm Tổng chi phí > 5 triệu $	o$ Trả `Budget_Status = OVER_BUDGET` với `Budget_Gap` rõ ràng. | **CRITICAL PASS** |
+| **CAP-02** | `Base_Capture = NONE`, Budget = 5 triệu | Thêm Pocket 3 làm Tổng chi phí > 5 triệu $\to$ Trả `Budget_Status = OVER_BUDGET` với `Budget_Gap` rõ ràng. | **CRITICAL PASS** |
 | **CON-01** | iPhone Lightning + DJI Mobile Receiver | Engine tự động chọn `AUD_ADP_DJI_MOBILE_LIGHTNING` vào `REQUIRED_PURCHASE`. | **PASS** |
 | **CON-02** | Đèn COB 100W + Cáp sạc 60W | Đánh dấu `NOT_COMPATIBLE` do dây cáp không đủ công suất sạc PD. | **PASS** |
-| **CON-03** | Pocket 3 $	o$ PC (Cáp sạc-only) | Đánh dấu `NOT_COMPATIBLE` do dây thiếu băng thông truyền data 5Gbps+. | **PASS** |
-| **CON-04** | Dây/Adapter đã có sẵn trong hộp | `Included_In_Box == YES` $	o$ Đặt `Purchase_Required = NO` (Không mua lại). | **PASS** |
+| **CON-03** | Pocket 3 $\to$ PC (Cáp sạc-only) | Đánh dấu `NOT_COMPATIBLE` do dây thiếu băng thông truyền data 5Gbps+. | **PASS** |
+| **CON-04** | Dây/Adapter đã có sẵn trong hộp | `Included_In_Box == YES` $\to$ Đặt `Purchase_Required = NO` (Không mua lại). | **PASS** |
 
 ---
 
@@ -186,7 +188,7 @@ Configurator Result  Investment V2   Equipment Library  Product Detail  Product 
 
 ### 12. CROSS-MODULE QA PLAN (KỊCH BẢN ĐỒNG BỘ 100% 5 MÀN HÌNH)
 
-Đối chiếu `Product_ID` trên 5 màn hình: Tên + Variant + Ảnh + Giá + Ngày giá + Link status phải khớp 100%. Nếu có 1 điểm sai lệch $	o$ **FAIL**.
+Đối chiếu `Product_ID` trên 5 màn hình: Tên + Variant + Ảnh + Giá + Ngày giá + Link status phải khớp 100%. Nếu có 1 điểm sai lệch $\to$ **FAIL**.
 
 ---
 
@@ -204,3 +206,9 @@ Configurator Result  Investment V2   Equipment Library  Product Detail  Product 
 - **DỮ LIỆU SÀN THƯƠNG MẠI**: `READY` (Sử dụng Composite Key & MarketplaceService tập trung).
 
 **TỔNG THỂ TÍNH SẴN SÀNG**: `READY FOR SYSTEM IMPLEMENTATION UPON APPROVAL`
+"""
+
+with open('implementation_plan.md', 'w', encoding='utf-8') as f:
+    f.write(doc)
+
+print("implementation_plan.md updated with Master System Update Architecture (14 Outputs).")

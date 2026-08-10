@@ -49,6 +49,10 @@ export class RecommendationEngine {
     } else if (inputs.hasLaptopPC) {
       recommendedSystem = "WEBCAM_PC";
       debug.appliedRules.push("R04-Fallback: Has_PC=Yes -> WEBCAM_PC");
+    } else if (needVideoOrPhoto) {
+      // FIX CRITICAL BUG: When user owns no capture device, CAPTURE is REQUIRED_PURCHASE
+      recommendedSystem = "POCKET";
+      debug.appliedRules.push("R-CAPTURE-REQUIRED: No capture device owned -> Infer POCKET system and require PKT_DJI_OP3_STD");
     } else {
       recommendedSystem = "NO_MATCH";
       debug.appliedRules.push("R-NO-MATCH: No primary device available");
@@ -88,7 +92,7 @@ export class RecommendationEngine {
       lightProductId = "";
       debug.appliedRules.push("R-Light-Owned: Has_Light=Yes -> Do not purchase light");
     } else if (inputs.style === "Professional") {
-      lightProductId = "LGT_SMR_RC60B";
+      lightProductId = "LGT_AMR_ACE25X"; // Excluded SmallRig from new recs
       debug.appliedRules.push("R07: Style=Professional -> LGT_SMR_RC60B");
     } else if (Number(inputs.budgetVND) < 5000000) {
       lightProductId = "LGT_GDX_C30BI";
@@ -105,6 +109,9 @@ export class RecommendationEngine {
       captureProductId = "";
     } else if (recommendedSystem === "POCKET") {
       captureProductId = inputs.hasPocket ? "" : "PKT_DJI_OP3_STD";
+      if (!inputs.hasPocket) {
+        debug.appliedRules.push("R-CAPTURE-REQUIRED: Require PKT_DJI_OP3_STD purchase");
+      }
     } else if (recommendedSystem === "WEBCAM_PC") {
       if (inputs.hasWebcam) {
         captureProductId = "";
@@ -192,7 +199,7 @@ export class RecommendationEngine {
       items.push({
         slot: 23,
         tier: "RECOMMENDED",
-        productId: "RIG_SMR_UCAGE",
+        productId: "RIG_ULA_MA53", // Excluded SmallRig from new recs
         product: p,
         whySelected: "Khung gắn điện thoại đa năng, hỗ trợ gắn đồng thời Mic và Đèn khi chưa có tripod chuyên dụng.",
         compatibilityNote: "Tương thích hầu hết smartphone kích thước tiêu chuẩn."
@@ -222,6 +229,32 @@ export class RecommendationEngine {
         product: p,
         whySelected: "Pin sạc dự phòng 100W PD dung lượng 20,000mAh cấp nguồn di động cho phiên live/quay dài.",
         compatibilityNote: "Cổng USB-C hỗ trợ chuẩn sạc nhanh 100W PD."
+      });
+    }
+
+    // Slot 26: DJI Mic Series Mobile Receiver Lightning Adapter (Auto-added if iPhone Lightning + DJI Mobile Receiver)
+    if (inputs.hasSmartphone && inputs.smartphoneConnector === "Lightning" && (audioProductId === "AUD_DJI_MICMINI" || audioProductId === "AUD_DJI_MICMINI2") && !inputs.hasAdapter) {
+      const p = this.getProduct("AUD_ADP_DJI_MOBILE_LIGHTNING");
+      items.push({
+        slot: 26,
+        tier: "REQUIRED",
+        productId: "AUD_ADP_DJI_MOBILE_LIGHTNING",
+        product: p,
+        whySelected: "Adapter Lightning chính hãng cho DJI Mic Series Mobile Receiver kết nối vào iPhone cổng Lightning.",
+        compatibilityNote: "Chỉ dùng cho DJI Mic Series Mobile Receiver. Không dùng cho receiver DJI Mic 3."
+      });
+    }
+
+    // Slot 27: High-Speed USB-C Data Cable (Auto-added for 4K Webcam / Pocket 3 data transfer if missing)
+    if ((recommendedSystem === "WEBCAM_PC" || recommendedSystem === "POCKET") && !inputs.hasCable) {
+      const p = this.getProduct("CON_DATA_UGR_80150");
+      items.push({
+        slot: 27,
+        tier: "RECOMMENDED",
+        productId: "CON_DATA_UGR_80150",
+        product: p,
+        whySelected: "Cáp dữ liệu USB-C 10Gbps 4K60 PD 100W truyền luồng video 4K chất lượng cao từ Webcam/Pocket sang PC.",
+        compatibilityNote: "Băng thông USB 3.x 10Gbps truyền hình ảnh 4K60 không độ trễ."
       });
     }
 

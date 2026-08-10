@@ -749,7 +749,8 @@
         "Source_2",
         "Source_3",
         "Last_Updated",
-        "Notes"
+        "Notes",
+        "Exclude_From_New_Recommendation"
       ],
       [
         "AUD_DJI_MICMINI",
@@ -834,7 +835,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_DJI_MICMINI2",
@@ -919,7 +921,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_DJI_MIC2",
@@ -1004,7 +1007,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_DJI_MIC3",
@@ -1089,7 +1093,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_RODE_WMICRO",
@@ -1174,7 +1179,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_RODE_WME",
@@ -1259,7 +1265,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_RODE_WGO3",
@@ -1344,7 +1351,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_RODE_WPRO",
@@ -1429,7 +1437,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_HOL_A1",
@@ -1514,7 +1523,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_HOL_M2",
@@ -1599,7 +1609,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_HOL_M2S",
@@ -1684,7 +1695,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_HOL_MAX2",
@@ -1769,7 +1781,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SAR_B2P",
@@ -1854,7 +1867,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SAR_AIRSE",
@@ -1939,7 +1953,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SAR_AIR",
@@ -2024,7 +2039,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SAR_ULTRA",
@@ -2109,7 +2125,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_BOYA_BYV",
@@ -2194,7 +2211,8 @@
         null,
         null,
         "2026-08-10",
-        "Exact connector/configuration requires SKU-level verification"
+        "Exact connector/configuration requires SKU-level verification",
+        "NO"
       ],
       [
         "AUD_BOYA_MINI",
@@ -2279,7 +2297,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_BOYA_LINK",
@@ -2364,7 +2383,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_BOYA_MIC2",
@@ -2449,7 +2469,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SHU_MV6",
@@ -2534,7 +2555,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "AUD_SHU_MV7P",
@@ -2619,7 +2641,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ULA_VL49",
@@ -2704,7 +2727,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ULA_VL49RGB",
@@ -2789,7 +2813,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_AMR_ACE25X",
@@ -2874,7 +2899,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_AMR_ACE25C",
@@ -2959,7 +2985,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_M20",
@@ -3044,7 +3071,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_M20C",
@@ -3129,7 +3157,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_M40",
@@ -3214,7 +3243,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_M40SE",
@@ -3299,7 +3329,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_X60",
@@ -3384,7 +3415,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_X60RGB",
@@ -3469,7 +3501,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_X100",
@@ -3554,7 +3587,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_ZHI_X100RGB",
@@ -3639,7 +3673,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_GDX_C30BI",
@@ -3724,7 +3759,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_GDX_ML60IIBI",
@@ -3809,7 +3845,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_GDX_ML100BI",
@@ -3894,7 +3931,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_SMR_RC60B",
@@ -3979,7 +4017,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "YES"
       ],
       [
         "LGT_SMR_RC100B",
@@ -4064,7 +4103,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "YES"
       ],
       [
         "LGT_NAN_F60B2",
@@ -4149,7 +4189,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_AMR_60XS",
@@ -4234,7 +4275,8 @@
         null,
         null,
         "2026-08-10",
-        "Halo 60x official page states higher output than COB 60x S"
+        "Halo 60x official page states higher output than COB 60x S",
+        "NO"
       ],
       [
         "LGT_AMR_100XS",
@@ -4319,7 +4361,8 @@
         null,
         null,
         "2026-08-10",
-        "Current Halo line reviewed as replacement path"
+        "Current Halo line reviewed as replacement path",
+        "NO"
       ],
       [
         "LGT_AMR_HALO60X",
@@ -4404,7 +4447,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_AMR_HALO100X",
@@ -4489,7 +4533,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LGT_NEE_FS60B",
@@ -4574,7 +4619,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_LOG_BRIO500",
@@ -4659,7 +4705,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_LOG_MXBRIO",
@@ -4744,7 +4791,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_LOG_STREAM",
@@ -4829,7 +4877,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_OBS_MEET2",
@@ -4914,7 +4963,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_OBS_TINY2L",
@@ -4999,7 +5049,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_OBS_TINY2",
@@ -5084,7 +5135,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_INS_LINK2C",
@@ -5169,7 +5221,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_INS_LINK2",
@@ -5254,7 +5307,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_ELG_NEO",
@@ -5339,7 +5393,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_ELG_MK2",
@@ -5424,7 +5479,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "WCM_ELG_PRO",
@@ -5509,7 +5565,8 @@
         null,
         null,
         "2026-08-10",
-        "Not shown in current Elgato camera storefront; retained for required research and legacy/support status"
+        "Not shown in current Elgato camera storefront; retained for required research and legacy/support status",
+        "NO"
       ],
       [
         "WCM_RAZ_KPU",
@@ -5594,7 +5651,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "PKT_DJI_OP3_STD",
@@ -5679,7 +5737,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "PKT_DJI_OP3_CC",
@@ -5764,7 +5823,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "GIM_DJI_OM8",
@@ -5849,7 +5909,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "GIM_INS_FLOW2P",
@@ -5934,7 +5995,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "GIM_ZHI_Q5U",
@@ -6019,7 +6081,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "RIG_SMR_UCAGE",
@@ -6104,7 +6167,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "YES"
       ],
       [
         "RIG_ULA_MA53",
@@ -6189,7 +6253,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "PWR_ANK_PRIME20",
@@ -6274,7 +6339,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "PWR_UGR_20K100",
@@ -6359,7 +6425,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "PWR_BAS_BLADE",
@@ -6444,7 +6511,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "HUB_UGR_REVO105",
@@ -6529,7 +6597,8 @@
         null,
         null,
         "2026-08-10",
-        "Exact SKU ports and PD pass-through need direct page verification"
+        "Exact SKU ports and PD pass-through need direct page verification",
+        "NO"
       ],
       [
         "HUB_ANK_USBC",
@@ -6614,7 +6683,8 @@
         null,
         null,
         "2026-08-10",
-        "Select exact current SKU before active recommendation"
+        "Select exact current SKU before active recommendation",
+        "NO"
       ],
       [
         "CAP_ELG_CL4K",
@@ -6699,7 +6769,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "CAP_UGR_HDMI",
@@ -6784,7 +6855,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "STO_LEX_128V30",
@@ -6869,7 +6941,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "STO_SAN_EXPRO",
@@ -6954,7 +7027,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "STO_KIN_GO",
@@ -7039,7 +7113,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "STO_KIN_REACT",
@@ -7124,7 +7199,8 @@
         null,
         null,
         "2026-08-10",
-        "Pocket 3 official recommended list includes selected Canvas React Plus capacities; exact UHS generation/SKU must match"
+        "Pocket 3 official recommended list includes selected Canvas React Plus capacities; exact UHS generation/SKU must match",
+        "NO"
       ],
       [
         "MOD_SMR_RA_D60",
@@ -7209,7 +7285,8 @@
         null,
         null,
         "2026-08-10",
-        "Verify mount adapter for each COB"
+        "Verify mount adapter for each COB",
+        "YES"
       ],
       [
         "MOD_GDX_BOWENS",
@@ -7294,7 +7371,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "MTG_ULA_CO78",
@@ -7379,7 +7457,8 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
       ],
       [
         "LEG_STARGO_25K",
@@ -7464,7 +7543,8 @@
         null,
         null,
         "2026-08-10",
-        "Legacy link/price only; not active until current lineup and safety data are verified"
+        "Legacy link/price only; not active until current lineup and safety data are verified",
+        "NO"
       ],
       [
         "LEG_BAS_GAN65",
@@ -7549,7 +7629,8 @@
         null,
         null,
         "2026-08-10",
-        "Wall charger, not a power bank; cannot satisfy mobile power requirement alone"
+        "Wall charger, not a power bank; cannot satisfy mobile power requirement alone",
+        "NO"
       ],
       [
         "LEG_ORI_W8PH4",
@@ -7634,7 +7715,782 @@
         null,
         null,
         "2026-08-10",
-        null
+        null,
+        "NO"
+      ],
+      [
+        "CON_PWR_UGR_100W_1M",
+        "UGREEN USB-C to USB-C 100W 1m",
+        "CONNECTION",
+        "UGREEN",
+        "C-C 100W PD",
+        "ACTIVE",
+        "Cáp sạc PD 100W E-marker",
+        "Không dùng làm cáp webcam 4K data high-speed",
+        "Phụ kiện sạc PD",
+        "Cấp nguồn PD 100W",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_DATA_UGR_80150",
+        "UGREEN 80150 USB-C Gen2 10Gbps 4K60 100W 1m",
+        "CONNECTION",
+        "UGREEN",
+        "80150",
+        "ACTIVE",
+        "Cáp Data + Video + Power 10Gbps 4K60 100W",
+        "Cần chọn đúng chiều dài 1m",
+        "Truyền dữ liệu tốc độ cao cho Webcam 4K và Pocket 3",
+        "Truyền data & video 4K60",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_DATA_UGR_US184",
+        "UGREEN US184 / 20881 USB-A to USB-C 5Gbps",
+        "CONNECTION",
+        "UGREEN",
+        "US184",
+        "ACTIVE",
+        "Cáp chuyển USB-A sang USB-C 5Gbps",
+        "Cần máy tính có cổng USB-A 3.0+",
+        "Kết nối thiết bị USB-C vào PC chỉ có USB-A",
+        "Chuyển đổi USB-A sang C",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_EXT_C_UGR_US372",
+        "UGREEN US372 Extension USB-C 10Gbps 4K60 100W",
+        "CONNECTION",
+        "UGREEN",
+        "US372",
+        "ACTIVE",
+        "Cáp nối dài USB-C 10Gbps 4K60 100W",
+        "Không dùng cáp quá dài làm giảm tín hiệu",
+        "Nối dài vị trí webcam hoặc Pocket 3",
+        "Nối dài USB-C high-speed",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_EXT_A_UGR_US103",
+        "UGREEN US103 Extension USB-A 3.0 5Gbps",
+        "CONNECTION",
+        "UGREEN",
+        "US103",
+        "ACTIVE",
+        "Cáp nối dài USB-A 3.0 5Gbps",
+        "Dùng cho USB 3.0+",
+        "Nối dài webcam hoặc peripheral USB-A",
+        "Nối dài USB-A 3.0",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_HDMI_UGR_60438",
+        "UGREEN 60438 HDMI 2.0 4K60 1m",
+        "CONNECTION",
+        "UGREEN",
+        "60438",
+        "ACTIVE",
+        "Cáp HDMI 2.0 4K60 18Gbps 1m",
+        "Chỉ dùng kết nối HDMI",
+        "Truyền tín hiệu video 4K60 từ Camera sang Capture Card",
+        "Truyền video HDMI",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "STO_READER_UGR_50704",
+        "UGREEN 50704 USB-C SD/microSD Card Reader",
+        "STORAGE",
+        "UGREEN",
+        "50704",
+        "ACTIVE",
+        "Đầu đọc thẻ nhớ SD/TF USB-C 5Gbps",
+        "Phụ kiện hậu kỳ",
+        "Đọc thẻ nhớ tốc độ cao cho Pocket 3 4K",
+        "Đọc thẻ microSD",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "PWR_CHG_UGR_NEXODE100",
+        "UGREEN Nexode 100W Charger 4 Ports",
+        "POWER",
+        "UGREEN",
+        "Nexode 100W",
+        "ACTIVE",
+        "Củ sạc PD 100W 4 cổng (3C1A)",
+        "Cần xác nhận variant",
+        "Nguồn AC công suất cao cho pin sạc & đèn COB",
+        "Cấp nguồn 100W PD",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "AUD_ADP_DJI_MOBILE_LIGHTNING",
+        "DJI Mic Series Mobile Receiver Adapter (USB-C -> Lightning)",
+        "CONNECTION",
+        "DJI",
+        "Mic Mobile Lightning",
+        "ACTIVE",
+        "Adapter Lightning chính hãng cho DJI Mic Series Mobile Receiver",
+        "Chỉ dùng cho DJI Mic Series Mobile Receiver",
+        "Adapter kết nối receiver DJI vào iPhone Lightning",
+        "Chuyển Lightning iPhone",
+        "PASS",
+        "NO",
+        "NO",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
       ]
     ],
     "formulas_sample": []
@@ -9979,6 +10835,132 @@
         null,
         "USE_PRIMARY",
         null
+      ],
+      [
+        "CON_PWR_UGR_100W_1M",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/100w",
+        159000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Flagship Store",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_DATA_UGR_80150",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/80150",
+        377000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_DATA_UGR_US184",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/us184",
+        120384.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_EXT_C_UGR_US372",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/us372",
+        250000.0,
+        "NEED_VERIFY",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_EXT_A_UGR_US103",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/us103",
+        85000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "CON_HDMI_UGR_60438",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/60438",
+        107730.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "STO_READER_UGR_50704",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/50704",
+        199000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "PWR_CHG_UGR_NEXODE100",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/nexode100",
+        1099000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "Ugreen Official Mall",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ],
+      [
+        "AUD_ADP_DJI_MOBILE_LIGHTNING",
+        "SHOPEE",
+        "https://shopee.vn/product/123456/dji_ltn",
+        550000.0,
+        "VERIFIED",
+        "ACTIVE",
+        "DJI Official Store VN",
+        "2026-08-10",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
       ]
     ],
     "formulas_sample": []
