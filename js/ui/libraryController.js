@@ -1,3 +1,5 @@
+import { marketplaceService } from '../data/marketplaceService.js';
+
 export class LibraryController {
   constructor(productsData, modalController) {
     this.products = productsData;
@@ -221,33 +223,21 @@ export class LibraryController {
     }
 
     return list.map(p => {
-      const priceStr = p.Price_Current ? `${Number(p.Price_Current).toLocaleString()}đ` : 'Giá đang cập nhật';
-      const platform = p.Primary_Platform || 'OFFICIAL';
-      const linkStatus = p.Link_Status || 'NEED_VERIFY';
-      const primaryLink = p.Primary_Link || '';
+      const comm = marketplaceService.getProductCommercialData(p.Product_ID);
+      const priceStr = comm.preferred_price ? `${Number(comm.preferred_price).toLocaleString()}đ` : 'Giá đang cập nhật';
 
       let ctaHtml = '';
-      if (platform === 'TIKTOK_SHOP' || platform === 'RETAILER') {
-        if (linkStatus === 'ACTIVE' && primaryLink) {
-          ctaHtml = `<a href="${primaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">🛒 Mua (${platform.replace('_', ' ')})</a>`;
-        } else {
-          ctaHtml = `<button class="btn btn-secondary btn-sm disabled" disabled>Link cần cập nhật</button>`;
-        }
-      } else {
-        if (primaryLink) {
-          ctaHtml = `<a href="${primaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🌐 Xem hãng</a>`;
-        } else {
-          ctaHtml = `<span class="badge badge-brand">Đang cập nhật</span>`;
-        }
+      if (comm.tiktok && comm.tiktok.URL_Status === 'VERIFIED_ACTIVE') {
+        ctaHtml += `<a href="${comm.tiktok.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background:#000;color:#fff;margin-right:4px;">🛒 TikTok</a>`;
+      }
+      if (comm.shopee && comm.shopee.URL_Status === 'VERIFIED_ACTIVE') {
+        ctaHtml += `<a href="${comm.shopee.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background:#EE4D2D;color:#fff;margin-right:4px;">🛒 Shopee</a>`;
+      }
+      if (!ctaHtml && comm.official) {
+        ctaHtml = `<a href="${comm.official.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🌐 Xem hãng</a>`;
       }
 
-      const imgHtml = p.Image_URL ? `
-        <img src="${p.Image_URL}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3);" />
-      ` : `
-        <div class="product-placeholder" style="margin-bottom: var(--space-3);">
-          <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
-          <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
-          <div class="placeholder-model">${p.Model || p.Product_Name}</div>
+      const imgHtml = `<img src="${comm.image}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3); width:100%; height:160px; object-fit:contain;" />`;
           <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
         </div>
       `;

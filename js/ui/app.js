@@ -5,6 +5,7 @@ import { WizardController } from './wizardController.js';
 import { ResultRenderer } from './resultRenderer.js';
 import { LibraryController } from './libraryController.js';
 import { ComparisonController } from './comparisonController.js';
+import { InvestmentController } from './investmentController.js';
 
 class App {
   constructor() {
@@ -40,6 +41,9 @@ class App {
 
     // Comparison Controller
     this.comparisonController = new ComparisonController(productsData, this.modalController);
+
+    // Investment Controller
+    this.investmentController = new InvestmentController(productsData, this.modalController);
   }
 
   setupRouting() {
@@ -70,7 +74,8 @@ class App {
       configurator: document.getElementById('configuratorWizard'),
       result: document.getElementById('recommendationResult'),
       library: document.getElementById('equipmentLibrary'),
-      compare: document.getElementById('productComparison')
+      compare: document.getElementById('productComparison'),
+      investment: document.getElementById('investmentModule')
     };
 
     // Hide all views

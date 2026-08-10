@@ -1,3 +1,4 @@
+import { marketplaceService } from '../data/marketplaceService.js';
 import { specsData } from '../data/specsData.js';
 import { compatibilityData } from '../data/compatibilityData.js';
 import { alternativesData } from '../data/alternativesData.js';
@@ -38,28 +39,21 @@ export class ModalController {
     const product = this.engine.getProduct(productId);
     if (!product) return;
 
+    const comm = marketplaceService.getProductCommercialData(productId);
     const specs = specsMap.get(productId) || {};
     const modalContent = document.getElementById('modalContent');
     if (!modalContent) return;
 
-    // Determine purchase CTA vs info CTA
+    // Multi-marketplace CTA buttons
     let ctaHtml = '';
-    const linkStatus = product.Link_Status || 'NEED_VERIFY';
-    const primaryLink = product.Primary_Link || '';
-    const platform = product.Primary_Platform || 'OFFICIAL';
-
-    if (platform === 'TIKTOK_SHOP' || platform === 'RETAILER') {
-      if (linkStatus === 'ACTIVE' && primaryLink) {
-        ctaHtml = `<a href="${primaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">🛒 ĐẶT MUA NGAY (${platform.replace('_', ' ')})</a>`;
-      } else {
-        ctaHtml = `<button class="btn btn-secondary btn-lg disabled" disabled>LINK CẦN CẬP NHẬT</button>`;
-      }
-    } else {
-      if (primaryLink) {
-        ctaHtml = `<a href="${primaryLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">🌐 XEM THÔNG TIN TỪ HÃNG</a>`;
-      } else {
-        ctaHtml = `<span class="badge badge-brand">THÔNG TIN ĐANG CẬP NHẬT</span>`;
-      }
+    if (comm.tiktok && comm.tiktok.URL_Status === 'VERIFIED_ACTIVE') {
+      ctaHtml += `<a href="${comm.tiktok.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background:#000;color:#fff;margin-right:8px;font-weight:700;">🛒 ĐẶT MUA TRÊN TIKTOK SHOP</a>`;
+    }
+    if (comm.shopee && comm.shopee.URL_Status === 'VERIFIED_ACTIVE') {
+      ctaHtml += `<a href="${comm.shopee.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background:#EE4D2D;color:#fff;margin-right:8px;font-weight:700;">🛒 ĐẶT MUA TRÊN SHOPEE MALL</a>`;
+    }
+    if (!ctaHtml && comm.official) {
+      ctaHtml = `<a href="${comm.official.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">🌐 XEM THÔNG TIN TỪ HÃNG</a>`;
     }
 
     // Specialized Specs UI based on category
