@@ -238,9 +238,6 @@ export class LibraryController {
       }
 
       const imgHtml = `<img src="${comm.image}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3); width:100%; height:160px; object-fit:contain;" />`;
-          <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
-        </div>
-      `;
 
       return `
         <div class="library-product-card">

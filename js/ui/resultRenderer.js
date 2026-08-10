@@ -341,14 +341,6 @@ export class ResultRenderer {
     }
 
     const imgHtml = `<img src="${comm.image}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3); width:100%; height:160px; object-fit:contain;" />`;
-    ` : `
-      <div class="product-placeholder" style="margin-bottom: var(--space-3);">
-        <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
-        <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
-        <div class="placeholder-model">${p.Model || p.Product_Name}</div>
-        <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
-      </div>
-    `;
 
     return `
       <div class="result-product-card">
