@@ -233,8 +233,8 @@ export class LibraryController {
       if (comm.shopee && comm.shopee.URL_Status === 'VERIFIED_ACTIVE') {
         ctaHtml += `<a href="${comm.shopee.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background:#EE4D2D;color:#fff;margin-right:4px;">🛒 Shopee</a>`;
       }
-      if (!ctaHtml && comm.official) {
-        ctaHtml = `<a href="${comm.official.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">🌐 Xem hãng</a>`;
+      if (!ctaHtml) {
+        ctaHtml = `<span class="badge badge-brand" style="background:#F1F5F9;color:#64748B;font-size:0.75rem;">⏳ Đang cập nhật sàn VN</span>`;
       }
 
       const imgHtml = `<img src="${comm.image}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3); width:100%; height:160px; object-fit:contain;" />`;

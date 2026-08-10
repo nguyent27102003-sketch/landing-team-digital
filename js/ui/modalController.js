@@ -52,8 +52,8 @@ export class ModalController {
     if (comm.shopee && comm.shopee.URL_Status === 'VERIFIED_ACTIVE') {
       ctaHtml += `<a href="${comm.shopee.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background:#EE4D2D;color:#fff;margin-right:8px;font-weight:700;">🛒 ĐẶT MUA TRÊN SHOPEE MALL</a>`;
     }
-    if (!ctaHtml && comm.official) {
-      ctaHtml = `<a href="${comm.official.Product_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">🌐 XEM THÔNG TIN TỪ HÃNG</a>`;
+    if (!ctaHtml) {
+      ctaHtml = `<span class="badge badge-brand" style="background:#F1F5F9;color:#64748B;font-size:0.9rem;padding:8px 16px;">⏳ Đang cập nhật link sàn VN</span>`;
     }
 
     // Specialized Specs UI based on category

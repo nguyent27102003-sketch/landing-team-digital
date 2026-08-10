@@ -346,14 +346,14 @@ export class InvestmentController {
     const balProds = [
       this.productsMap.get(micProduct),
       this.productsMap.get(lightProductBal),
-      this.productsMap.get('RIG_SMR_UCAGE')
+      this.productsMap.get('RIG_ULA_MA53')
     ].filter(Boolean);
 
     // 3. Combo Nâng Cấp (UPGRADE)
     const upgProds = [
       this.productsMap.get('AUD_DJI_MIC3'),
-      this.productsMap.get('LGT_SMR_RC60B'),
-      this.productsMap.get('RIG_SMR_UCAGE')
+      this.productsMap.get('LGT_AMR_60XS'),
+      this.productsMap.get('RIG_ULA_MA53')
     ].filter(Boolean);
 
     const isBalRecommended = this.state.priority === 'BALANCED' || this.state.priority === 'MOBILITY_FIRST';
@@ -507,11 +507,11 @@ export class InvestmentController {
       `);
     }
 
-    if (btns.length === 0 && comm.official) {
+    if (btns.length === 0) {
       btns.push(`
-        <a href="${comm.official.Product_URL}" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="font-size: 0.78rem; text-align: center; border-radius: var(--radius-sm); padding: 6px 10px;">
-          🌐 XEM THÔNG TIN HÃNG
-        </a>
+        <div style="font-size: 0.78rem; text-align: center; padding: 6px 10px; background: #F1F5F9; color: #64748B; border-radius: var(--radius-sm); font-weight: 600;">
+          ⏳ Tạm hết hàng trên sàn VN
+        </div>
       `);
     }
 
