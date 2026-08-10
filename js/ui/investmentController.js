@@ -211,7 +211,7 @@ export class InvestmentController {
 
           <!-- Delta Difference Banner -->
           <div style="margin-top: var(--space-4); background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: var(--radius-md); padding: 14px; font-size: 0.88rem; color: #1E40AF;">
-            <strong>💡 So sánh chênh lệch:</strong> Nếu chọn Combo Cân Bằng thay Combo Tiết Kiệm: Chi phí tăng <strong>+200.000đ/bộ</strong> (Tổng 10 bộ tăng <strong>+2.000.000đ</strong>). Đổi lại nhận được đèn chiếu sáng chuẩn màu hơn và chân gá chắc chắn cho di chuyển.
+            <strong>💡 So sánh chênh lệch:</strong> Nếu chọn Combo Cân Bằng thay Combo Tiết Kiệm: Chi phí tăng <strong>+200.000đ/bộ</strong> (Tổng ${this.state.kitCount} bộ tăng <strong>+${(200000 * this.state.kitCount).toLocaleString()}đ</strong>). Đổi lại nhận được đèn chiếu sáng chuẩn màu hơn và chân gá chắc chắn cho di chuyển.
           </div>
         </div>
 
