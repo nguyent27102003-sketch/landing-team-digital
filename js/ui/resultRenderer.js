@@ -344,14 +344,20 @@ export class ResultRenderer {
       }
     }
 
+    const imgHtml = p.Image_URL ? `
+      <img src="${p.Image_URL}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3);" />
+    ` : `
+      <div class="product-placeholder" style="margin-bottom: var(--space-3);">
+        <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
+        <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
+        <div class="placeholder-model">${p.Model || p.Product_Name}</div>
+        <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
+      </div>
+    `;
+
     return `
       <div class="result-product-card">
-        <div class="product-placeholder" style="margin-bottom: var(--space-3);">
-          <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
-          <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
-          <div class="placeholder-model">${p.Model || p.Product_Name}</div>
-          <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
-        </div>
+        ${imgHtml}
 
         <div class="card-top-meta">
           <span class="badge badge-brand">${p.Brand}</span>

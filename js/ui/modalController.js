@@ -165,11 +165,15 @@ export class ModalController {
     modalContent.innerHTML = `
       <div style="display: flex; gap: var(--space-6); margin-bottom: var(--space-6); flex-wrap: wrap;">
         <div style="width: 240px; flex-shrink: 0;">
-          <div class="product-placeholder" style="aspect-ratio: 1; padding: var(--space-6);">
-            <div class="placeholder-icon">${this.getCategoryIcon(product.Category)}</div>
-            <div class="placeholder-brand">${product.Brand || 'BRAND'}</div>
-            <div class="placeholder-model" style="font-size: 1.1rem; margin-top: 4px;">${product.Model || product.Product_Name}</div>
-          </div>
+          ${product.Image_URL ? `
+            <img src="${product.Image_URL}" alt="${product.Product_Name}" class="product-img" style="aspect-ratio: 1; object-fit: cover;" />
+          ` : `
+            <div class="product-placeholder" style="aspect-ratio: 1; padding: var(--space-6);">
+              <div class="placeholder-icon">${this.getCategoryIcon(product.Category)}</div>
+              <div class="placeholder-brand">${product.Brand || 'BRAND'}</div>
+              <div class="placeholder-model" style="font-size: 1.1rem; margin-top: 4px;">${product.Model || product.Product_Name}</div>
+            </div>
+          `}
         </div>
 
         <div style="flex: 1; min-width: 280px;">

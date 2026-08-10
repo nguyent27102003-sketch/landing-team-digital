@@ -241,14 +241,20 @@ export class LibraryController {
         }
       }
 
+      const imgHtml = p.Image_URL ? `
+        <img src="${p.Image_URL}" alt="${p.Product_Name}" class="product-img" style="margin-bottom: var(--space-3);" />
+      ` : `
+        <div class="product-placeholder" style="margin-bottom: var(--space-3);">
+          <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
+          <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
+          <div class="placeholder-model">${p.Model || p.Product_Name}</div>
+          <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
+        </div>
+      `;
+
       return `
         <div class="library-product-card">
-          <div class="product-placeholder" style="margin-bottom: var(--space-3);">
-            <div class="placeholder-icon">${this.getCategoryIcon(p.Category)}</div>
-            <div class="placeholder-brand">${p.Brand || 'BRAND'}</div>
-            <div class="placeholder-model">${p.Model || p.Product_Name}</div>
-            <div class="placeholder-category">${p.Category || 'EQUIPMENT'}</div>
-          </div>
+          ${imgHtml}
 
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-1);">
             <span class="lib-card-brand">${p.Brand}</span>

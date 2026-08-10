@@ -156,7 +156,18 @@
   border: 1px solid var(--color-error-border);
 }
 
-/* Product Image Placeholder (Neutral, Clean, Crisp) */
+/* Product Image (High-definition, Object Fit) */
+.product-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: #F8FAFC;
+  display: block;
+}
+
+/* Product Image Placeholder (Fallback) */
 .product-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
